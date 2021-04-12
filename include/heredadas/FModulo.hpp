@@ -1,9 +1,9 @@
 /*
 Autor: Leonardo Alfonso Cruz Rodríguez
 Asignatura: Algoritmos y Estructuras de Datos Avanzadas
-Práctica: 3
-Archivo: mfinito.hpp
-Descripción: Clase FModulo
+Práctica: 5
+Archivo: FModulo.hpp
+Descripción: Clase heredada de FuncionDispersion FModulo
 */
 #pragma once
 

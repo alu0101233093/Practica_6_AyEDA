@@ -1,15 +1,7 @@
 /*
 Autor: Leonardo Alfonso Cruz Rodríguez
 Asignatura: Algoritmos y Estructuras de Datos Avanzadas
-Práctica: 3
-Archivo: main.cpp
-Descripción: Archivo ejecutable principal
-*/
-
-/*
-Autor: Leonardo Alfonso Cruz Rodríguez
-Asignatura: Algoritmos y Estructuras de Datos Avanzadas
-Práctica: 3
+Práctica: 6
 Archivo: main.cpp
 Descripción: Archivo ejecutable principal
 */

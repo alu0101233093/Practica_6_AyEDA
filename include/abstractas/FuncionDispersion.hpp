@@ -1,9 +1,9 @@
 /*
 Autor: Leonardo Alfonso Cruz Rodríguez
 Asignatura: Algoritmos y Estructuras de Datos Avanzadas
-Práctica: 3
-Archivo: mfinito.hpp
-Descripción: Clase FuncionDispersion
+Práctica: 6
+Archivo: FuncionDispersion.hpp
+Descripción: Clase abstracta Funcion Dispersion
 */
 #pragma once
 

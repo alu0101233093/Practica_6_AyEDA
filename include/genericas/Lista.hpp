@@ -1,9 +1,9 @@
 /*
 Autor: Leonardo Alfonso Cruz Rodríguez
 Asignatura: Algoritmos y Estructuras de Datos Avanzadas
-Práctica: 3
-Archivo: mfinito.hpp
-Descripción: Clase mundo_finito
+Práctica: 5
+Archivo: Lista.hpp
+Descripción: Clase genérica Lista
 */
 #pragma once
 

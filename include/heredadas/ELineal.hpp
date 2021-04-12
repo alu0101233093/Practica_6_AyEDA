@@ -1,9 +1,9 @@
 /*
 Autor: Leonardo Alfonso Cruz Rodríguez
 Asignatura: Algoritmos y Estructuras de Datos Avanzadas
-Práctica: 3
-Archivo: mfinito.hpp
-Descripción: Clase ELineal
+Práctica: 6
+Archivo: ELineal.hpp
+Descripción: Clase heredada de FExploracion ELineal
 */
 #pragma once
 

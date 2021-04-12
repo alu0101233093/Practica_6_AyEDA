@@ -1,9 +1,9 @@
 /*
 Autor: Leonardo Alfonso Cruz Rodríguez
 Asignatura: Algoritmos y Estructuras de Datos Avanzadas
-Práctica: 3
-Archivo: mfinito.hpp
-Descripción: Clase ECuadratica
+Práctica: 6
+Archivo: Ecuadratica.hpp
+Descripción: Clase heredada de FExploracion ECuadratica
 */
 #pragma once
 

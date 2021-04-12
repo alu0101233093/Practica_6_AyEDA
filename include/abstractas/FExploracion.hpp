@@ -1,9 +1,9 @@
 /*
 Autor: Leonardo Alfonso Cruz Rodríguez
 Asignatura: Algoritmos y Estructuras de Datos Avanzadas
-Práctica: 3
-Archivo: mfinito.hpp
-Descripción: Clase FuncionExploracion
+Práctica: 6
+Archivo: FExploracion.hpp
+Descripción: Clase abstracta Funcion Exploracion
 */
 #pragma once
 
