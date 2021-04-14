@@ -27,6 +27,7 @@ class TablaHash {
     std::vector<Vector<Clave>*> vDatos_;
     int nDatos_;      // Tamaño de la tabla
     int nSinonimos_;  // Tamaño de la tabla
+    int comparaciones_;
     FuncionDispersion<Clave>* fd_;
     FuncionExploracion<Clave>* fe_;
 
@@ -40,6 +41,7 @@ class TablaHash {
 
 template <class Clave>
 TablaHash<Clave>::TablaHash(int nDatos, int nSinonimos, FuncionDispersion<Clave>* fd, FuncionExploracion<Clave>* fe) {
+    comparaciones_ = 0;
     nDatos_ = nDatos;
     nSinonimos_ = nSinonimos;
     fd_ = fd;
@@ -63,21 +65,32 @@ bool TablaHash<Clave>::Buscar(Clave& c) {
 
 template <class Clave>
 bool TablaHash<Clave>::Insertar(Clave& c) {
-    int i = 0, limite = 100, indice;
+    int i = 0, indice;
     bool insertado = false;
 
     indice = (*fd_)(c);
     insertado = vDatos_[indice]->Insertar(c);
-    if (insertado)
+    if (insertado) {
+        std::cout << "1" << std::endl;
+        comparaciones_ = 0;
         return true;
-
-    while (!insertado && i <= limite) {
-        indice = (((*fd_)(c)) + (*fe_)(c, i)) % nDatos_;
-        if (insertado = vDatos_[indice]->Insertar(c))
-            return true;
-        i++;
     }
-    std::cout << "No se ha podido introducir el valor indicado" << std::endl;
+
+    comparaciones_ = 1;
+    while (!insertado && i <= nDatos_) {
+        indice = (((*fd_)(c)) + (*fe_)(c, i)) % nDatos_;
+        insertado = vDatos_[indice]->Insertar(c);
+        if (insertado) {
+            std::cout << comparaciones_ << std::endl;
+            comparaciones_ = 0;
+            return true;
+        }
+        i++;
+        comparaciones_++;
+    }
+    //std::cout << "No se ha podido introducir el valor indicado." << std::endl;
+    std::cout << comparaciones_ << std::endl;
+    comparaciones_ = 0;
     return false;
 }
 
